@@ -3,6 +3,17 @@
     font-size: 14px;
     color: #1A1919;
 }
-.imgShow{
+
+.imgShow {
     background: linear-gradient(180deg, #CDD3F4 0%, #9FB1F0 100%);
+}
+
+.feather {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
 }
