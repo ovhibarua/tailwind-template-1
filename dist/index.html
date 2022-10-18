@@ -1,15 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="main.css">
-    <title>tailwind</title>
+    <title>General</title>
 </head>
-<body>
-    <div class="p-20 text-white bg-black text-bold font-sans">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus atque praesentium earum reiciendis similique iure tenetur nulla debitis, beatae aliquid, nam totam natus distinctio. Hic delectus laudantium fuga neque tenetur.
-    </div>
+
+<body class="font-inter">
+    <main class="flex">
+        <aside class="w-64 fixed top-0 left-0 h-screen shadow-md p-7">
+            <h2 class="flex items-center text-base font-semibold gap-2 mb-12 text-[#1A1919]"><i
+                    class="ri-arrow-left-s-line"></i> Settings</h2>
+            <div class="mb-14">
+                <p class="text-[#808080] text-sm font-normal flex items-center gap-2 mb-4"><i
+                        class="ri-user-3-line"></i> Personal</p>
+                <div class="pl-2">
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Profile</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Language
+                        & region</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-[#808080] text-sm font-normal flex items-center gap-2 mb-4"><i
+                        class="ri-home-8-line"></i> Workspace</p>
+                <div class="pl-2">
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">General</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Members</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Connected
+                        apps</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Plans</a>
+                </div>
+            </div>
+        </aside>
+        <section class="w-full pl-64 flex justify-center pt-16">
+            <div class="w-[640px]">
+                <h1 class="text-[#1A1919] mb-2 text-2xl font-medium">General</h1>
+                <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Lorem ipsum
+                    dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="mb-6">
+                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Workspace</h5>
+                    <input class="wInput mb-2 border-[1px] border-[#DEDEDE] rounded-lg py-2 px-4 w-full" type="text"
+                        name="text" id="text" placeholder="Acme">
+                    <p class="text-[#666666] text-sm font-normal">Nulla in urna elementum, sagittis diam sed, ornare
+                        eros.</p>
+                </div>
+                <div>
+                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Workspace Logo</h5>
+                    <div class="flex gap-4 mb-2">
+                        <div class="imgShow w-24 h-24 rounded-lg"></div>
+                        <div class="flex flex-col items-center justify-center gap-2">
+                            <button
+                                class="bg-[#3069FE] drop-shadow-md rounded-lg py-1 px-2 text-white text-sm font-normal hover:bg-blue-500">Upload
+                                picture</button>
+                            <button class="border-[1px] drop-shadow-md w-full border-[#DEDEDE] rounded-lg py-1 px-2 text-[#4D4D4D] text-sm font-normal hover:bg-[#EC5962] hover:text-white flex items-center justify-center gap-2"><i class="ri-delete-bin-line"></i> Delete</button>
+                        </div>
+                    </div>
+                    <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Click to
+                        update or drag your image here into the square.</p>
+                </div>
+                <div>
+                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Domain</h5>
+                    <div class="flex items-center border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
+                        <span class="py-2 px-4 border-r-[1.5px] text-[#666666] text-sm font-normal">designsystem.com/</span>
+                        <input class="wInput py-2 px-4 w-full" type="text"
+                        name="text" id="text" placeholder="Acme">
+                    </div>
+                    <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">You can select</p>
+                </div>
+                <div>
+                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Danger zone</h5>
+                    <button class="border-[1px] w-fit mb-2 border-[#DEDEDE] bg-[#EC5962] text-white drop-shadow-md rounded-lg py-2 px-4 text-sm font-normal hover:bg-red-700 hover:text-white flex items-center justify-center gap-2"><i class="ri-delete-bin-line"></i> Delete workspace</button>
+                    <p class="text-[#666666] text-sm font-normal mb-8">This action cannot be undone. This will permanently delete the workspace, including all data.</p>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
