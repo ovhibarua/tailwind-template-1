@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -13,8 +13,10 @@
 
 <body class="font-inter">
     <main class="flex">
-        <aside id="sBar" class="w-64 fixed bg-white z-30 -translate-x-64 lg:-translate-x-0 top-0 left-0 h-screen shadow-2xl lg:shadow-md p-7">
-            <div class="absolute top-0 left-full p-2 bg-white rounded-br-md border-t border-r border-b border-gray-300/30 block lg:hidden">
+        <aside id="sBar"
+            class="w-64 fixed bg-white z-30 -translate-x-64 lg:-translate-x-0 top-0 left-0 h-screen shadow-2xl lg:shadow-md p-7">
+            <div
+                class="absolute top-0 left-full p-2 bg-white rounded-br-md border-t border-r border-b border-gray-300/30 block lg:hidden">
                 <i id="opBar" class="ri-menu-2-line text-2xl cursor-pointer"></i>
                 <i id="clBar" class="ri-close-line text-2xl cursor-pointer hidden"></i>
             </div>
@@ -69,7 +71,8 @@
                                 class="bg-[#3069FE] drop-shadow-md rounded-lg py-1.5 px-2 text-white text-sm font-normal hover:bg-blue-500">Upload
                                 picture</button>
                             <button
-                                class="border-[1px] drop-shadow-md w-full border-[#DEDEDE] rounded-lg py-1 px-2 text-[#4D4D4D] text-sm font-normal hover:bg-[#EC5962] hover:text-white flex items-center justify-center gap-2"><i data-feather="trash-2"></i> Delete</button>
+                                class="border-[1px] drop-shadow-md w-full border-[#DEDEDE] rounded-lg py-1 px-2 text-[#4D4D4D] text-sm font-normal hover:bg-[#EC5962] hover:text-white flex items-center justify-center gap-2"><i
+                                    data-feather="trash-2"></i> Delete</button>
                         </div>
                     </div>
                     <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Click to
@@ -77,9 +80,8 @@
                 </div>
                 <div>
                     <h5 class="text-[#1A1919] text-sm font-normal mb-2">Domain</h5>
-                    <div class="flex items-center border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
-                        <span
-                            class="py-2 px-4 border-r-[1.5px] text-[#666666] text-sm font-normal">designsystem.com/</span>
+                    <div class="flex flex-col sm:flex-row items-center border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
+                        <span class="py-2 px-4 w-full sm:w-fit border-b-[1.5px] sm:border-r-[1.5px] text-[#666666] text-sm font-normal">designsystem.com/</span>
                         <input class="wInput focus:outline-none py-2 px-4 w-full" type="text" name="text" id="text"
                             placeholder="Acme">
                     </div>
@@ -89,7 +91,8 @@
                 <div>
                     <h5 class="text-[#1A1919] text-sm font-normal mb-2">Danger zone</h5>
                     <button
-                        class="border-[1px] w-fit mb-2 border-[#DEDEDE] bg-[#EC5962] text-white drop-shadow-md rounded-lg py-2 px-4 text-sm font-normal hover:bg-red-700 hover:text-white flex items-center justify-center gap-2"><i data-feather="trash-2"></i> Delete workspace</button>
+                        class="border-[1px] w-fit mb-2 border-[#DEDEDE] bg-[#EC5962] text-white drop-shadow-md rounded-lg py-2 px-4 text-sm font-normal hover:bg-red-700 hover:text-white flex items-center justify-center gap-2"><i
+                            data-feather="trash-2"></i> Delete workspace</button>
                     <p class="text-[#666666] text-sm font-normal mb-8">This action cannot be undone. This will
                         permanently delete the workspace, including all data.</p>
                 </div>
