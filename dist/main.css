@@ -1105,6 +1105,10 @@ video {
   .sm\:border-r-\[1\.5px\]{
     border-right-width: 1.5px;
   }
+
+  .sm\:border-b-0{
+    border-bottom-width: 0px;
+  }
 }
 
 @media (min-width: 768px){
