@@ -13,7 +13,11 @@
 
 <body class="font-inter">
     <main class="flex">
-        <aside class="w-64 fixed top-0 left-0 h-screen shadow-md p-7">
+        <aside id="sBar" class="w-64 fixed bg-white z-30 -translate-x-64 lg:-translate-x-0 top-0 left-0 h-screen shadow-2xl lg:shadow-md p-7">
+            <div class="absolute top-0 left-full p-2 bg-white rounded-br-md border-t border-r border-b border-gray-300/30 block lg:hidden">
+                <i id="opBar" class="ri-menu-2-line text-2xl cursor-pointer"></i>
+                <i id="clBar" class="ri-close-line text-2xl cursor-pointer hidden"></i>
+            </div>
             <h2 class="flex items-center text-base font-semibold gap-2 mb-12 text-[#1A1919]"><i
                     class="ri-arrow-left-s-line"></i> Settings</h2>
             <div class="mb-14">
@@ -43,8 +47,8 @@
                 </div>
             </div>
         </aside>
-        <section class="w-full pl-64 flex justify-center pt-16">
-            <div class="w-[640px]">
+        <section class="w-full lg:pl-64 flex justify-center pt-16">
+            <div class="w-[640px] p-5 lg:p-0">
                 <h1 class="text-[#1A1919] mb-2 text-2xl font-medium">General</h1>
                 <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Lorem ipsum
                     dolor sit amet, consectetur adipiscing elit.</p>
@@ -97,6 +101,7 @@
     <!-- choose one -->
     <script src="https://unpkg.com/feather-icons"></script>
     <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/main.js"></script>
 
     <script>
         feather.replace()

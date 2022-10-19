@@ -17,3 +17,8 @@
     stroke-linejoin: round;
     fill: none;
 }
+
+.show{
+    transform: translateX(0px) !important;
+    transition: 0.3s ease-in-out;
+}
