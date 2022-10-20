@@ -720,12 +720,12 @@ video {
   scroll-behavior: smooth;
 }
 
-.rounded-lg{
-  border-radius: 0.5rem;
-}
-
 .rounded-md{
   border-radius: 0.375rem;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-br-md{
@@ -928,6 +928,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-\[\#A5A5A5\]{
+  --tw-text-opacity: 1;
+  color: rgb(165 165 165 / var(--tw-text-opacity));
+}
+
 .text-\[\#3069FE\]{
   --tw-text-opacity: 1;
   color: rgb(48 105 254 / var(--tw-text-opacity));
@@ -1007,14 +1012,6 @@ video {
 
 .placeholder\:font-normal::placeholder{
   font-weight: 400;
-}
-
-.placeholder\:font-light::-moz-placeholder{
-  font-weight: 300;
-}
-
-.placeholder\:font-light::placeholder{
-  font-weight: 300;
 }
 
 .placeholder\:text-\[\#A5A5A5\]::-moz-placeholder{
