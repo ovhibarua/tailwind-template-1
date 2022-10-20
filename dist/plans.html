@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Today do</title>
+</head>
+
+<body class="font-inter">
+    <main class="flex">
+        <aside id="sBar"
+            class="w-64 fixed bg-white z-30 -translate-x-64 lg:-translate-x-0 top-0 left-0 h-screen shadow-2xl lg:shadow-md p-7">
+            <div
+                class="absolute top-0 left-full p-2 bg-white shadow-sm rounded-br-md border-t border-r border-b border-gray-300/30 block lg:hidden">
+                <i id="opBar" class="ri-menu-2-line text-2xl cursor-pointer"></i>
+                <i id="clBar" class="ri-close-line text-2xl cursor-pointer hidden"></i>
+            </div>
+            <h2 class="flex items-center text-base font-semibold gap-2 mb-12 text-[#1A1919]"><i
+                    class="ri-arrow-left-s-line text-lg h-[25.5px]"></i> Settings</h2>
+            <div class="mb-14">
+                <p class="text-[#808080] text-sm font-normal flex items-center gap-2 mb-4"><i
+                        class="w-5 flex justify-center" data-feather="user"></i> Personal</p>
+                <div class="pl-3">
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Profile</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Language
+                        & region</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-[#808080] text-sm font-normal flex items-center gap-2 mb-4"><i
+                        class="w-5 flex justify-center" data-feather="home"></i> Workspace</p>
+                <div class="pl-3">
+                    <a href="index.html"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">General</a>
+                    <a href="members.html"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Members</a>
+                    <a href="intragation.html"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7]  hover:text-[#1A1919] hover:rounded-md py-2 px-3">Connected
+                        apps</a>
+                    <a href="plans.html"
+                        class="text-[#1A1919] text-sm font-normal block hover:bg-[#F7F7F7] bg-[#F7F7F7] rounded-md hover:text-[#1A1919] hover:rounded-md py-2 px-3">Plans</a>
+                </div>
+            </div>
+        </aside>
+        <section class="w-full lg:pl-64 flex justify-center pt-16">
+            <div class="w-[640px] p-5 lg:p-0">
+                <h1 class="text-[#1A1919] mb-2 text-2xl font-medium">Plans</h1>
+                <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-9 sm:gap-6 mb-6">
+                    <div>
+                        <h4 class="text-[#1A1919] font-medium text-2xl mb-2">Starter</h4>
+                        <p class="text-[#666666] font-normal text-sm mb-4">For individuals and small teams</p>
+                        <h2 class="text-[40px] relative w-fit font-semibold leading-[56px] text-[#1A1919] flex items-baseline">0<span class="text-[26px]">$</span><p class="text-sm text-[#1A1919]/60 font-medium ml-1">per month</p><span class="text-[#4D4D4D] font-normal absolute left-full top-[14px] text-sm ml-2 border-[#DEDEDE] border-[1px] rounded-md p-1">Free</span></h2>
+                        <button class="bg-[#F7F7F7] px-4 py-2 rounded-lg text-[#C9C9C9] font-medium text-sm mb-6">Current plan</button>
+                        <div>
+                            <p class="text-[#1A1919] text-sm font-normal mb-3">Includes</p>
+                            <ul>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">50 Pages</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">5 Team members</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">2GB Storage</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div>
+                        <h4 class="text-[#1A1919] font-medium text-2xl mb-2">Pro</h4>
+                        <p class="text-[#666666] font-normal text-sm mb-4">For power users and growing teams</p>
+                        <h2 class="text-[40px] relative w-fit font-semibold leading-[56px] text-[#1A1919] flex items-baseline">10<span class="text-[26px]">$</span><p class="text-sm text-[#1A1919]/60 font-medium ml-1">per month</p></h2>
+                        <button class="bg-[#3069FE] px-4 py-2 rounded-lg text-white cusShadow font-medium text-sm mb-6">Upgrade to pro</button>
+                        <div>
+                            <p class="text-[#1A1919] text-sm font-normal mb-3">Includes</p>
+                            <ul>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Unlimited pages</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Custom teams</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Unlimited storage</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Custom company page</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Advanced Analytics</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Live chat support</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">Data import/export</span></li>
+                                <li class="flex items-center gap-2 mb-2"><i class="text-[#3069FE]" data-feather="check"></i> <span class="text-[#666666] font-normal text-sm leading-[24px]">API<span class="text-[#3069FE] ml-2 bg-[#EEF3FF] rounded-md p-1">Beta</span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        feather.replace()
+    </script>
+
+
+
+
+</body>
+
+</html>
