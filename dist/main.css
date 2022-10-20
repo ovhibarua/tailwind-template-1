@@ -601,12 +601,12 @@ video {
   margin-bottom: 1.5rem;
 }
 
-.ml-2{
-  margin-left: 0.5rem;
-}
-
 .mb-1{
   margin-bottom: 0.25rem;
+}
+
+.ml-2{
+  margin-left: 0.5rem;
 }
 
 .block{
@@ -635,10 +635,6 @@ video {
 
 .h-12{
   height: 3rem;
-}
-
-.h-4{
-  height: 1rem;
 }
 
 .h-\[16px_\!important\]{
@@ -696,10 +692,6 @@ video {
   align-items: center;
 }
 
-.justify-start{
-  justify-content: flex-start;
-}
-
 .justify-center{
   justify-content: center;
 }
@@ -718,10 +710,6 @@ video {
 
 .self-start{
   align-self: flex-start;
-}
-
-.self-end{
-  align-self: flex-end;
 }
 
 .overflow-hidden{
@@ -746,10 +734,6 @@ video {
 
 .border-\[1px\]{
   border-width: 1px;
-}
-
-.border-\[2px\]{
-  border-width: 2px;
 }
 
 .border-t{
@@ -862,24 +846,9 @@ video {
   padding-right: 14px;
 }
 
-.py-\[4px\]{
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.py-\[5px\]{
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.py-3{
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 
 .pl-3{
@@ -934,10 +903,6 @@ video {
   font-weight: 500;
 }
 
-.not-italic{
-  font-style: normal;
-}
-
 .text-\[\#1A1919\]{
   --tw-text-opacity: 1;
   color: rgb(26 25 25 / var(--tw-text-opacity));
@@ -977,12 +942,6 @@ video {
 .shadow-sm{
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.shadow-lg{
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1048,6 +1007,14 @@ video {
 
 .placeholder\:font-normal::placeholder{
   font-weight: 400;
+}
+
+.placeholder\:font-light::-moz-placeholder{
+  font-weight: 300;
+}
+
+.placeholder\:font-light::placeholder{
+  font-weight: 300;
 }
 
 .placeholder\:text-\[\#A5A5A5\]::-moz-placeholder{
@@ -1132,10 +1099,6 @@ video {
 
   .md\:items-center{
     align-items: center;
-  }
-
-  .md\:justify-between{
-    justify-content: space-between;
   }
 
   .md\:self-stretch{
