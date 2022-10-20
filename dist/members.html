@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Today do</title>
+</head>
+
+<body class="font-inter">
+    <main class="flex">
+        <aside id="sBar"
+            class="w-64 fixed bg-white z-30 -translate-x-64 lg:-translate-x-0 top-0 left-0 h-screen shadow-2xl lg:shadow-md p-7">
+            <div
+                class="absolute top-0 left-full p-2 bg-white shadow-sm rounded-br-md border-t border-r border-b border-gray-300/30 block lg:hidden">
+                <i id="opBar" class="ri-menu-2-line text-2xl cursor-pointer"></i>
+                <i id="clBar" class="ri-close-line text-2xl cursor-pointer hidden"></i>
+            </div>
+            <h2 class="flex items-center text-base font-semibold gap-2 mb-12 text-[#1A1919]"><i
+                    class="ri-arrow-left-s-line text-lg h-[25.5px]"></i> Settings</h2>
+            <div class="mb-14">
+                <p class="text-[#808080] text-sm font-normal flex items-center gap-2 mb-4"><i
+                        class="w-5 flex justify-center" data-feather="user"></i> Personal</p>
+                <div class="pl-3">
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Profile</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Language
+                        & region</a>
+                </div>
+            </div>
+            <div>
+                <p class="text-[#808080] text-sm font-normal flex items-center gap-2 mb-4"><i
+                        class="w-5 flex justify-center" data-feather="home"></i> Workspace</p>
+                <div class="pl-3">
+                    <a href="index.html"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">General</a>
+                    <a href="members.html"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Members</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Connected
+                        apps</a>
+                    <a href="#"
+                        class="text-[#4D4D4D] text-sm font-normal block hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Plans</a>
+                </div>
+            </div>
+        </aside>
+        <section class="w-full lg:pl-64 flex justify-center pt-16">
+            <div class="w-[640px] p-5 lg:p-0">
+                <h1 class="text-[#1A1919] mb-2 text-2xl font-medium">Members</h1>
+                <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Add members to
+                    share, edit, and collaborate on pages together within a workspace</p>
+                <div class="mb-6 pb-6 border-b-[1px] border-[#EDEDED] flex flex-col gap-2 items-start md:flex-row justify-between md:items-center">
+                    <p class="text-[#1A1919] text-base font-medium">Members</p>
+                    <div class="flex items-center gap-4 w-full flex-col md:flex-row md:w-fit">
+                        <div class="flex w-full md:w-fit items-center gap-2 border-[1px] border-[#DEDEDE] rounded-lg py-1 px-[14px]"><i
+                                class="text-[#666666]" data-feather="search"></i> <input
+                                class="placeholder:text-sm placeholder:text-[#A5A5A5] placeholder:font-normal focus:outline-none"
+                                type="text" name="filter" id="filter" placeholder="Filter by email or name"></div>
+                        <button
+                            class="flex self-start md:self-stretch items-center gap-2 bg-[#3069FE] text-white text-sm font-normal hover:bg-blue-500 shadow-md px-2 py-[6px] rounded-lg"><i
+                                data-feather="user-plus"></i> Add member</button>
+                    </div>
+                </div>
+                <div class="mb-6 pb-6 border-b-[1px] border-[#EDEDED] flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <img class="w-12 h-12 rounded-lg" src="img/Avatar__64.png" alt="avatar">
+                        </div>
+                        <div>
+                            <h6 class="text-[#1A1919] text-sm font-normal mb-1">Joy Pacheco <span class="text-[#3069FE] text-sm font-normal bg-[#EEF3FF] rounded-md p-1 ml-2">Admin</span></h6>
+                            <p class="text-[#666666] text-sm font-normal">joypacheco@acme.com</p>
+                        </div>
+                    </div>
+                    <span class="border-[1px] border-[#DEDEDE] rounded-lg p-2 cursor-pointer shadow-sm"><i class="text-[#666666] h-[16px_!important]" data-feather="more-horizontal"></i></span>
+                </div>
+                <div class="mb-6 pb-6 border-b-[1px] border-[#EDEDED] flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <img class="w-12 h-12 rounded-lg" src="img/Avatar__64 (1).png" alt="avatar">
+                        </div>
+                        <div>
+                            <h6 class="text-[#1A1919] text-sm font-normal mb-1">Jamie Schwartz</h6>
+                            <p class="text-[#666666] text-sm font-normal">jamieschwartz@acme.com</p>
+                        </div>
+                    </div>
+                    <span class="border-[1px] border-[#DEDEDE] rounded-lg p-2 cursor-pointer shadow-sm"><i class="text-[#666666] h-[16px_!important]" data-feather="more-horizontal"></i></span>
+                </div>
+                <div class="mb-6 pb-6 border-b-[1px] border-[#EDEDED] flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <img class="w-12 h-12 rounded-lg" src="img/Avatar__64 (2).png" alt="avatar">
+                        </div>
+                        <div>
+                            <h6 class="text-[#1A1919] text-sm font-normal mb-1">Fahmida Juarez</h6>
+                            <p class="text-[#666666] text-sm font-normal">fahmida@acme.com</p>
+                        </div>
+                    </div>
+                    <span class="border-[1px] border-[#DEDEDE] rounded-lg p-2 cursor-pointer shadow-sm"><i class="text-[#666666] h-[16px_!important]" data-feather="more-horizontal"></i></span>
+                </div>
+                <div class="mb-6 pb-6 border-b-[1px] border-[#EDEDED] flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <img class="w-12 h-12 rounded-lg" src="img/Avatar__64 (3).png" alt="avatar">
+                        </div>
+                        <div>
+                            <h6 class="text-[#1A1919] text-sm font-normal mb-1">Esteban Dona</h6>
+                            <p class="text-[#666666] text-sm font-normal">esteban@acme.com</p>
+                        </div>
+                    </div>
+                    <span class="border-[1px] border-[#DEDEDE] rounded-lg p-2 cursor-pointer shadow-sm"><i class="text-[#666666] h-[16px_!important]" data-feather="more-horizontal"></i></span>
+                </div>
+                <div class="mb-6 flex justify-between items-center">
+                    <div class="flex items-center gap-4">
+                        <div>
+                            <img class="w-12 h-12 rounded-lg" src="img/Avatar__64 (4).png" alt="avatar">
+                        </div>
+                        <div>
+                            <h6 class="text-[#1A1919] text-sm font-normal mb-1">Irina Sanchez</h6>
+                            <p class="text-[#666666] text-sm font-normal">irinasanchez@acme.com</p>
+                        </div>
+                    </div>
+                    <span class="border-[1px] border-[#DEDEDE] rounded-lg p-2 cursor-pointer shadow-sm"><i class="text-[#666666] h-[16px_!important]" data-feather="more-horizontal"></i></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        feather.replace()
+    </script>
+
+
+
+
+</body>
+
+</html>
