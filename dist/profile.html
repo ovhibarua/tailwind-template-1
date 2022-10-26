@@ -26,7 +26,7 @@
                         class="w-5 flex justify-center" data-feather="user"></i> Personal</p>
                 <div class="pl-3">
                     <a href="profile.html"
-                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Profile</a>
+                        class="text-[#1A1919] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] rounded-md bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Profile</a>
                     <a href="Language.html"
                         class="text-[#4D4D4D] text-sm font-normal block hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Language
                         & region</a>
@@ -37,7 +37,7 @@
                         class="w-5 flex justify-center" data-feather="home"></i> Workspace</p>
                 <div class="pl-3">
                     <a href="index.html"
-                        class="text-[#1A1919] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] rounded-md bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">General</a>
+                        class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7]  hover:text-[#1A1919] hover:rounded-md py-2 px-3">General</a>
                     <a href="members.html"
                         class="text-[#4D4D4D] text-sm font-normal block mb-2 hover:bg-[#F7F7F7] hover:text-[#1A1919] hover:rounded-md py-2 px-3">Members</a>
                     <a href="intragation.html"
@@ -50,21 +50,15 @@
         </aside>
         <section class="w-full lg:pl-64 flex justify-center pt-16">
             <div class="w-[640px] p-5 lg:p-0">
-                <h1 class="text-[#1A1919] mb-2 text-2xl font-medium">General</h1>
+                <h1 class="text-[#1A1919] mb-2 text-2xl font-medium">Profile</h1>
                 <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Lorem ipsum
                     dolor sit amet, consectetur adipiscing elit.</p>
-                <div class="mb-6">
-                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Workspace</h5>
-                    <input
-                        class="wInput text-sm text-[#1A1919] focus:outline-none mb-2 border-[1px] border-[#DEDEDE] rounded-lg py-2 px-4 w-full"
-                        type="text" name="text" id="text" placeholder="Acme">
-                    <p class="text-[#666666] text-sm font-normal">Nulla in urna elementum, sagittis diam sed, ornare
-                        eros.</p>
-                </div>
                 <div>
-                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Workspace Logo</h5>
+                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Profile picture</h5>
                     <div class="flex gap-4 mb-2">
-                        <div class="imgShow w-24 h-24 rounded-lg"></div>
+                        <div class="w-24 h-24 rounded-lg">
+                            <img class="w-full" src="img/pro.png" alt="profile">
+                        </div>
                         <div class="flex flex-col items-center justify-center gap-2">
                             <button
                                 class="bg-[#3069FE] drop-shadow-md rounded-lg py-1.5 px-2 text-white text-sm font-normal hover:bg-blue-500">Upload
@@ -74,28 +68,42 @@
                                     data-feather="trash-2"></i> Delete</button>
                         </div>
                     </div>
-                    <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Click to
-                        update or drag your image here into the square.</p>
+                    <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">Add a
+                        picture, recommended size: 256x256</p>
                 </div>
-                <div>
-                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Domain</h5>
-                    <div
-                        class="flex flex-col sm:flex-row items-center border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
-                        <span
-                            class="py-2 px-4 w-full sm:w-fit border-b-[1.5px] sm:border-b-0 sm:border-r-[1.5px] text-[#666666] text-sm font-normal">designsystem.com/</span>
-                        <input class="wInput text-sm text-[#1A1919] focus:outline-none py-2 px-4 w-full" type="text" name="text" id="text"
-                            placeholder="Acme">
+                <div class="grid grid-cols-2 items-center gap-6">
+                    <div class="col-span-2 sm:col-span-1">
+                        <label for="firstName" class="text-[#1A1919] block text-sm font-normal mb-2">First name</label>
+                        <div class="border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
+                            <input class="wInput text-sm text-[#1A1919] focus:outline-none py-2 px-4 w-full" type="text"
+                                name="firstName" id="firstName" placeholder="Joy">
+                        </div>
                     </div>
-                    <p class="text-[#666666] text-sm font-normal pb-8 border-b-[1px] border-[#EDEDED] mb-8">You can
-                        select</p>
-                </div>
-                <div>
-                    <h5 class="text-[#1A1919] text-sm font-normal mb-2">Danger zone</h5>
-                    <button
-                        class="border-[1px] w-fit mb-2 border-[#DEDEDE] bg-[#EC5962] text-white drop-shadow-md rounded-lg py-2 px-4 text-sm font-normal hover:bg-red-700 hover:text-white flex items-center justify-center gap-2"><i
-                            data-feather="trash-2"></i> Delete workspace</button>
-                    <p class="text-[#666666] text-sm font-normal mb-8">This action cannot be undone. This will
-                        permanently delete the workspace, including all data.</p>
+                    <div class="col-span-2 sm:col-span-1">
+                        <label for="lastName" class="text-[#1A1919] block text-sm font-normal mb-2">Last name</label>
+                        <div class="border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
+                            <input class="wInput text-sm text-[#1A1919] focus:outline-none py-2 px-4 w-full" type="text"
+                                name="lastName" id="lastName" placeholder="Pacheco">
+                        </div>
+                    </div>
+                    <div class="col-span-2">
+                        <label for="mail" class="text-[#1A1919] block text-sm font-normal mb-2">Email</label>
+                        <div class="border-[1px] border-[#DEDEDE] rounded-lg mb-2 overflow-hidden">
+                            <input class="wInput text-sm text-[#1A1919] focus:outline-none py-2 px-4 w-full"
+                                type="email" name="mail" id="mail" placeholder="joypacheco@acme.com">
+                        </div>
+                        <p class="text-[#666666] text-sm font-normal">After updating, you will receive a confirmation
+                            email on your current address</p>
+                    </div>
+                    <div class="col-span-2">
+                        <label for="location" class="text-[#1A1919] block text-sm font-normal mb-2">Location</label>
+                        <div class="border-[1px] border-[#DEDEDE] rounded-lg overflow-hidden mb-8">
+                            <input class="wInput text-sm text-[#1A1919] focus:outline-none py-2 px-4 w-full" type="text"
+                                name="location" id="location" placeholder="Paris, France">
+                        </div>
+                        <button
+                            class="bg-[#3069FE] drop-shadow-md rounded-lg py-2 px-4 text-white text-sm font-normal mb-5 hover:bg-blue-500">Update</button>
+                    </div>
                 </div>
             </div>
         </section>
