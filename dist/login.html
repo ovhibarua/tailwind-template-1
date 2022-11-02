@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Today do</title>
+</head>
+
+<body class="font-inter">
+    <main class="flex h-full md:h-screen">
+        <section class="relative w-full lg:w-1/2 h-full flex-col flex justify-center items-center">
+            <div class="flex flex-col pt-10 lg:pt-0 px-4 justify-center items-start w-full sm:w-[456px]">
+                <h2 class="font-medium text-[32px] text-[#1A1919] mb-2">Log in</h2>
+                <p class="text-sm font-normal text-[#666666] mb-8">Enter your credentials to acces your account</p>
+                <button
+                    class="flex shadow-sm mb-8 justify-center items-center gap-2 p-3 border-[1px] w-full text-[#4D4D4D] text-sm font-medium rounded-lg border-[#DEDEDE] ">
+                    <div class="w-6 h-6"><img src="img/logo googleg 48dp.png" alt=""></div> Log In with Google
+                </button>
+                <span class="block w-full relative text-center text-[#C9C9C9] text-sm divide mb-11">or</span>
+                <form action="#" method="get" class="w-full">
+                    <label class="block text-[#1A1919] text-sm font-medium mb-2" for="email">Email address</label>
+                    <input class="border-[1px] border-[#DEDEDE] rounded-lg px-4 py-3 w-full mb-6 outline-none"
+                        type="email" name="email" id="email" placeholder="name@company.com">
+                    <label class="flex items-center justify-between text-[#1A1919] text-sm font-medium mb-2"
+                        for="pass">Email address <a class="text-[#3069FE]" href="#">Forgot password?</a></label>
+                    <input class="border-[1px] border-[#DEDEDE] rounded-lg px-4 py-3 w-full mb-6 outline-none"
+                        type="password" name="pass" id="pass" placeholder="Password">
+                    <div
+                        class="flex flex-row-reverse justify-end items-center gap-2 text-[#1A1919] text-sm mb-6 font-medium">
+                        <label for="check">Remember information</label>
+                        <input class="w-4 h-4 cursor-pointer" type="checkbox" name="check" id="check">
+                    </div>
+                    <input
+                        class="bg-[#3069FE] p-3 mb-8 text-sm text-[#FFFFFF] cursor-pointer hover:bg-blue-700 font-medium rounded-lg w-full"
+                        type="submit" value="Login">
+                </form>
+                <p class="text-[#1A1919] text-sm font-medium">Not a member?<a class="text-[#3069FE]" href="#">Sign up
+                        now</a></p>
+            </div>
+            <p class="static lg:absolute bottom-0 left-0 w-full py-8 text-center text-[#666666] text-sm font-medium">© 2022 Acme,
+                All right Reserved</p>
+        </section>
+        <section style="background-image: url('img/Analytics.png');" class="hidden lg:block login_bnnr w-1/2 bg-[#EDEDED] bg-no-repeat bg-right-bottom">
+            <div class="py-48 lg:pl-28 2xl:pl-44">
+                <h3 class="text-2xl font-medium text-[#1A1919] mb-3">Donec aliquam ex sed neque eleifend</h3>
+                <p class="text-[#1A1919] font-medium">Donec aliquam ex sed neque eleifend elementum</p>
+            </div>
+        </section>
+    </main>
+
+
+    <!-- choose one -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+        feather.replace()
+    </script>
+
+
+
+
+</body>
+
+</html>
