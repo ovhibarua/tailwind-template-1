@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+#c1:checked ~ .chk1{
+    @apply opacity-100;
+}
+#c2:checked ~ .chk1{
+    @apply opacity-100;
+}
+#c3:checked ~ .chk1{
+    @apply opacity-100;
+}
+#c4:checked ~ .chk1{
+    @apply opacity-100;
+}
+#c5:checked ~ .chk1{
+    @apply opacity-100;
+}
+#c6:checked ~ .chk1{
+    @apply opacity-100;
+}
+
 .wInput::placeholder {
     font-weight: 400;
     font-size: 14px;
